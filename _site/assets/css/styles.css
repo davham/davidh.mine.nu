@@ -1,0 +1,47 @@
+/* Add your own CSS here to build on top of Simple.css */
+.post-link {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.meta {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.blog-item {
+  margin-bottom: 4cqmax;
+}
+
+.post_date {
+  font-size: 0.8rem;
+  font-weight: light;
+}
+
+nav a.current {
+  color: var(--accent) !important;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
+}
