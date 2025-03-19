@@ -46,6 +46,14 @@ nav {
   color: var(--accent);
 }
 
+footer {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
 @media (max-width: 720px) {
   nav {
     flex-direction: column;

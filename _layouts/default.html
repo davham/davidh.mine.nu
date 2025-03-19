@@ -6,13 +6,17 @@
 
     <title>{{ page.title }}</title>
     <!-- Minified version -->
-<link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+<!-- <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css"> -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
     {% include navigation.html %}
-    <main>    
+    <main class="container">    
       
       {{ content }}
     </main>
