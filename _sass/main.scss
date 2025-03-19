@@ -30,14 +30,14 @@ nav a.current {
 	color: var(--accent) !important;
 }
 
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 90%;
-	max-width: 900px;
-	margin: 0 auto;
-}
+// nav {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	width: 90%;
+// 	max-width: 900px;
+// 	margin: 0 auto;
+// }
 
 .logo {
 	font-size: 3rem;
@@ -52,11 +52,6 @@ img {
 	width: 100%;
 }
 
-@media (max-width: 720px) {
-	nav {
-		flex-direction: column;
-	}
-	nav ul li a {
-		text-decoration: none;
-	}
+nav ul li a {
+	text-decoration: none;
 }
