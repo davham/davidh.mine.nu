@@ -2,8 +2,12 @@
    
   <nav class="container-fluid">
   <ul>
-    <li><strong>davidh</strong></li>
+    <li><strong ><a href="/" class="brand">davidh</a></strong></li>
   </ul>
+   <!-- The hamburger menu -->
+   <label for="menu" tabindex="0"> &lt; Menu </label>
+   <input id="menu" type="checkbox" />
+   <!-- The collapsable menu -->
 
       <ul>
         {% for item in site.data.navigation %}

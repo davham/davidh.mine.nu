@@ -30,17 +30,12 @@ nav a.current {
 	color: var(--accent) !important;
 }
 
-// nav {
-// 	display: flex;
-// 	justify-content: space-between;
-// 	align-items: center;
-// 	width: 90%;
-// 	max-width: 900px;
-// 	margin: 0 auto;
-// }
+section {
+	margin-bottom: 60px;
+}
 
-.logo {
-	font-size: 3rem;
+.brand {
+	font-size: 2rem;
 	font-weight: bold;
 	color: var(--accent);
 }
@@ -54,4 +49,55 @@ img {
 
 nav ul li a {
 	text-decoration: none;
+}
+
+// hamburger menu
+
+/* These two lines make the checkbox and the label disappear when we are in desktop mode. */
+nav input[type='checkbox'],
+nav label {
+	display: none;
+}
+
+/* This start to get interesting: we go into mobile phone mode */
+@media (width < 576px) {
+	/* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
+	input[type='checkbox']:not(:checked) + ul {
+		display: none;
+	}
+
+	nav {
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/* Stlying the menu icon, the checkbox stays hidden */
+	nav label {
+		text-align: right;
+		display: block;
+		padding: 0.5em;
+		line-height: 1.6em;
+		align-self: center;
+	}
+
+	/* Because we are in mobile mode, we want to display it as a vertical list */
+	nav ul {
+		display: block;
+	}
+
+	/* We have two lists: the first one are the always visibile items in the 
+		menu bar. The second one is the one that will be hidden */
+	nav ul:last-child {
+		width: 100%;
+		flex-basis: 100%;
+	}
+
+	nav ul li {
+		margin-bottom: 0;
+		width: 100%;
+		text-align: right;
+		padding: 0.5em;
+	}
 }

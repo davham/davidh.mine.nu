@@ -19,16 +19,20 @@ href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
    
   <nav class="container-fluid">
   <ul>
-    <li><strong>davidh</strong></li>
+    <li><strong ><a href="/" class="brand">davidh</a></strong></li>
   </ul>
+   <!-- The hamburger menu -->
+   <label for="menu" tabindex="0"> &lt; Menu </label>
+   <input id="menu" type="checkbox" />
+   <!-- The collapsable menu -->
 
       <ul>
         
         <li><a href="/" >Home</a></li>
         
-        <li><a href="/about.html" >About</a></li>
-        
         <li><a href="/blog.html" class="current">Blog</a></li>
+        
+        <li><a href="/about.html" >About</a></li>
         
       </ul>
      
@@ -37,32 +41,40 @@ href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
 </header>
     <main class="container">    
       
-        <h2>Latest Posts</h2>
-  <ul>
-    
-    <li class="blog-li">
-      <h3 class="post_title"><a href="/2025/03/18/lorem.html">Lorem</a></h3>
-      <p class="post_date">18 Mar 2025</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam leo odio, quis dictum metus bibendum id. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis id felis nec ipsum tincidunt posuere sit amet et ipsum. Morbi velit nulla, efficitur nec sagittis pharetra, finibus sit amet elit. Aenean vulputate mauris non sem ullamcorper, eu ultrices lectus pretium. Nulla facilisi. Proin ipsum lorem, aliquam ut luctus eget, feugiat condimentum felis. Donec ornare varius ante nec finibus. Ut a pulvinar elit. Suspendisse vel tincidunt felis. Duis ultrices sodales ligula id blandit. Quisque non augue vitae arcu pharetra fermentum. Aliquam ex velit, egestas ut quam blandit, eleifend dictum urna. Aenean sit amet purus est. Vivamus diam justo, vulputate eu arcu nec, auctor mattis leo.</p>
+      <h2>Latest Posts</h2>
+<ul>
+	
 
-    </li>
-    
-    <li class="blog-li">
-      <h3 class="post_title"><a href="/2024/10/11/hello.html">Hello World</a></h3>
-      <p class="post_date">11 Oct 2024</p>
-      <p><img src="/assets/images/earth.webp" alt="Earth" /></p>
+	<section>
+		<li class="blog-li">
+			<h3 class="post_title"><a href="/2025/03/18/lorem.html">Lorem</a></h3>
+			<p class="post_date">18 Mar 2025</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam leo odio, quis dictum metus bibendum id. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis id felis nec ipsum tincidunt posuere sit amet et ipsum. Morbi velit nulla, efficitur nec sagittis pharetra, finibus sit amet elit. Aenean vulputate mauris non sem ullamcorper, eu ultrices lectus pretium. Nulla facilisi. Proin ipsum lorem, aliquam ut luctus eget, feugiat condimentum felis. Donec ornare varius ante nec finibus. Ut a pulvinar elit. Suspendisse vel tincidunt felis. Duis ultrices sodales ligula id blandit. Quisque non augue vitae arcu pharetra fermentum. Aliquam ex velit, egestas ut quam blandit, eleifend dictum urna. Aenean sit amet purus est. Vivamus diam justo, vulputate eu arcu nec, auctor mattis leo.</p>
 
-    </li>
-    
-    <li class="blog-li">
-      <h3 class="post_title"><a href="/2024/10/10/apples.html">Apples</a></h3>
-      <p class="post_date">10 Oct 2024</p>
-      <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+		</li>
+	</section>
+	
 
-    </li>
-    
-  </ul>
+	<section>
+		<li class="blog-li">
+			<h3 class="post_title"><a href="/2024/10/11/hello.html">Hello World</a></h3>
+			<p class="post_date">11 Oct 2024</p>
+			<p><img src="/assets/images/earth.webp" alt="Earth" /></p>
 
+		</li>
+	</section>
+	
+
+	<section>
+		<li class="blog-li">
+			<h3 class="post_title"><a href="/2024/10/10/apples.html">Apples</a></h3>
+			<p class="post_date">10 Oct 2024</p>
+			<p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+
+		</li>
+	</section>
+	
+</ul>
 
     </main>
     <footer>
