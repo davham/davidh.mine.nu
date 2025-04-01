@@ -101,3 +101,9 @@ nav label {
 		padding: 0.5em;
 	}
 }
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(576px, 1fr));
+	gap: 50px;
+}
