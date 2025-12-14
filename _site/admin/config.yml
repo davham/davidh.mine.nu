@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: david/davidh.mine.nu # <- change this
+  branch: main # or 'master', whichever you use
+
+media_folder: 'assets/uploads' # where uploaded files go in the repo
+public_folder: '/assets/uploads' # how they are referenced in the site
+
+site_url: 'https://davidh.cc' # optional but recommended
+display_url: 'https://davidh.cc' # optional
+
+collections:
+  - name: 'posts' # used in routes, e.g. /admin/#/collections/posts
+    label: 'Blog Posts'
+    label_singular: 'Blog Post'
+    folder: '_posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'string',
+          default: 'David H',
+        }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
