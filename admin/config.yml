@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: davham/davidh.mine.nu # <- change this
   branch: main # or 'master', whichever you use
 
