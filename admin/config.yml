@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: david/davidh.mine.nu # <- change this
+  repo: davham/davidh.mine.nu # <- change this
   branch: main # or 'master', whichever you use
 
 media_folder: 'assets/uploads' # where uploaded files go in the repo
