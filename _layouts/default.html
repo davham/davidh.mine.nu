@@ -13,10 +13,23 @@
 		/>
 
 		<link rel="stylesheet" href="/assets/css/styles.css" />
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	</head>
 	<body>
 		{% include navigation.html %}
 		<main class="container">{{ content }}</main>
 		{% include footer.html %}
+
+		<script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on('init', (user) => {
+					if (!user) {
+						window.netlifyIdentity.on('login', () => {
+							document.location.href = '/admin/'
+						})
+					}
+				})
+			}
+		</script>
 	</body>
 </html>
